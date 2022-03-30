@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="Home of the Norcini Artisians" />
+  <meta name="author" content="Larry & Mark" />
+  <title>Norcini Artisians</title>
+  <base href="/" />
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb/mdb.min.css" rel="stylesheet" />
+  <!-- Custom App CSS -->
+  <link href="css/app.css" rel="stylesheet" />
+  <!--load all Font Awesome styles -->
+  <link href="css/font-awesome/all.css" rel="stylesheet" />
+
+  <style>
+    html {
+      background: url(img/pig.jpg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    body {
+      padding-top: 3.5rem;
+      background-color: #fffff0;
+      opacity: 0.9;
+    }
+
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <div id="navigation_area">...</div>
+
+  <div class="container">
+    <div class="row">
+      <span class="navbar-text">
+        <button type="button" class="btn btn-primary" id="connect-wallet">
+          Connect Wallet
+        </button>
+      </span>
+      <span class="navbar-text">
+        <form id="send-iotc" class="text-start">
+          <input type="hidden" id="iotc-Ph" value="5"/>
+          <input type="hidden" id="iotc-Weight" value="1143"/>
+          <input type="hidden" id="iotc-ChamberTemperature" value="66"/>
+          <input type="hidden" id="iotc-ChamberHumidity" value="76"/>
+          <input type="hidden" id="iotc-AmbientTemperature" value="56"/>
+          <input type="hidden" id="iotc-AmbientHumidity" value="45"/>
+          <input type="hidden" id="iotc-TxAddress" value="994393783hdhd7d84hhdhd"/>
+        </form>
+        <button type="button" class="btn btn-primary" id="iotc-register-send">
+          Register with IoT Central
+        </button>
+        <div id="iotCRegisterSend_area">...</div>
+      </span>
+    </div>
+  </div>
+
+  <!-- Options -->
+    <div class="container">
+        <div class="row text-center">
+        <div class="md-col-3">
+          <div class="card bg-dark text-light">
+            <div class="card-body text-center">
+              <h3 class="card-title mb-3">Send Telemetry</h3>
+              <p class="card-text">
+              <form id="send-telemetry" class="text-start">
+                <div class="container">
+                  <div class="row">
+                    <label for="telemetry-batch">Batch Number:&nbsp;</label>
+                    <input type="text" placeholder="batch" id="telemetry-batch" />
+                  </div>
+                  <div class="row">
+                    <label for="telemetry-timestamp">Timestamp: </label>
+                    <input type="text" placeholder="timestamp" id="telemetry-timestamp" />
+                  </div>
+                  <div class="row">
+                    <label for="telemetry-ph">pH: </label>
+                    <input type="text" placeholder="ph" id="telemetry-ph" />
+                  </div>
+                  <div class="row">
+                    <label for="telemetry-weight">Weight: </label>
+                    <input type="text" placeholder="weight" id="telemetry-weight" />
+                  </div>
+                  <div class="row">
+                    <label for="telemetry-temperature">Temperature: </label>
+                    <input type="text" placeholder="temperature" id="telemetry-temperature" />
+                  </div>
+                  <div class="row">
+                    <label for="telemetry-ambientTemperature">Ambient Temperature: </label>
+                    <input type="text" placeholder="ambientTemperature" id="telemetry-ambientTemperature" />
+                  </div>
+                  <div class="row">
+                    <label for="telemetry-humidity">Humidity: </label>
+                    <input type="text" placeholder="humidity" id="telemetry-humidity" />
+                  </div>
+                  <div class="row">
+                    <label for="telemetry-ambientHumidity">Ambient Humidity: </label>
+                    <input type="text" placeholder="ambientHumidity" id="telemetry-ambientHumidity" />
+                  </div>
+                </div>
+              </form>
+              </p>
+              <p id="send-telemetry-output" class="text-wrap"></p>
+              <button class="btn btn-primary" id="send-telemetry-button">Send Telemetry</button>
+            </div>
+          </div>
+          <br/>
+        </div>
+        <div class="md-col-3">
+          <div class="card bg-dark text-light">
+            <div class="card-body text-center">
+              <h3 class="card-title mb-3">
+                View Telemetry
+              </h3>
+              <p class="card-text">
+              <div class="container text-start">
+                <div class="row">
+                  <label for="view-telemetry-batch">Batch Number: </label>
+                  <input type="text" placeholder="batch" id="view-telemetry-batch" />
+                </div>
+                <section class="text-start p-3">
+                  <p id="output-telemetry-batch">Batch: </p>
+                  <p id="output-telemetry-timestamp">Timestamp: </p>
+                  <p id="output-telemetry-ph">pH: </p>
+                  <p id="output-telemetry-weight">Weight: </p>
+                  <p id="output-telemetry-temperature">Temperature: </p>
+                  <p id="output-telemetry-ambient-temperature">Ambient Temperature: </p>
+                  <p id="output-telemetry-humidity">Humidity: </p>
+                  <p id="output-telemetry-ambient-humidity">Ambient Humidity: </p>
+                </section>
+              </div>
+              </p>
+              <button class="btn btn-primary" id="view-telemetry-button">View Telemetry</button>
+            </div>
+          </div>
+          <br/>
+        </div>
+        <div class="md-col-3">
+          <div class="card bg-dark text-light">
+            <div class="card-body text-center">
+              <h3 class="card-title mb-3">
+                Mint
+              </h3>
+              <div class="container text-start">
+                <div class="row">
+                  <label for="mint-token-batch">Batch Number: </label>
+                  <input type="text" placeholder="batch" id="mint-token-batch" />
+                </div>
+              </div>
+              <p id="mint-output" class="text-wrap"></p>
+              <button class="btn btn-primary" id="mint-token-button">Mint</button>
+            </div>
+          </div>
+          <br/>
+        </div>
+        <div class="md-col-3">
+          <div class="card bg-dark text-light">
+            <div class="card-body text-center">
+              <h3 class="card-title mb-3">
+                View Token
+              </h3>
+              <div class="container text-start">
+                <div class="row">
+                  <label for="view-token">Token Id/Batch Number: </label>
+                  <input type="text" placeholder="tokenId" id="view-token" />
+                </div>
+              </div>
+              <p id="view-token-output" class="text-wrap text-start"></p>
+              <button class="btn btn-primary" id="view-token-button">View Token</button>
+            </div>
+          </div>
+          <br/>
+        </div>
+      </div>
+  </div>
+
+  <!-- Footer -->
+  <div id="footer_area">...</div>
+   
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script>
+    window.jQuery ||
+      document.write(
+        '<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>'
+      );
+  </script>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <!--web3 -->
+  <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+  <script src="js/app.js"></script>
+
+  <!-- Dynamic in Static via API -->
+  <script>
+    (async function () {
+      const { text } = await (await fetch("/api/Navigation?code=a8JfSiplOEIFaCjOnVRmyJYCxBtnTGOy2AzvGcTWbEfq5RCajn50pA==")).json();
+      document.querySelector("#navigation_area").innerHTML = text;
+      
+    })();
+  </script>
+  <script>
+    (async function () {
+      const { text } = await (await fetch("/api/Footer?code=a8JfSiplOEIFaCjOnVRmyJYCxBtnTGOy2AzvGcTWbEfq5RCajn50pA==")).json();
+      document.querySelector("#footer_area").innerHTML = text;
+    })();
+  </script>
+</body>
+
+</html>

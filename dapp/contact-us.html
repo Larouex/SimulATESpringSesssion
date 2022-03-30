@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="Home of the Norcini Artisians" />
+  <meta name="author" content="Larry & Mark" />
+  <title>Contact Us</title>
+  <base href="/" />
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb/mdb.min.css" rel="stylesheet" />
+  <!-- Custom App CSS -->
+  <link href="css/app.css" rel="stylesheet" />
+  <!--load all Font Awesome styles -->
+  <link href="css/font-awesome/all.css" rel="stylesheet" />
+
+  <style>
+    html {
+      background: url(img/pig.jpg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    body {
+      padding-top: 3.5rem;
+      background-color: #fffff0;
+      opacity: 0.9;
+    }
+
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <div id="navigation_area">...</div>
+
+  <!-- Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-1">
+        &nbsp;
+      </div>
+      <div class="col-md-10">
+        <div class="panel">
+          <div class="panel-header">
+            <div class="row">
+              <div class="col-md-12">
+                <h1>
+                  Contact Us
+                </h1>
+                <p>We are Mark and Larry and not Available for Contact Arbitrarily by Swines.</p>
+                <img src="./img/MarkAndLarrySaluminator.png" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1">
+        &nbsp;
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div id="footer_area">...</div>
+   
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script>
+    window.jQuery ||
+      document.write(
+        '<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>'
+      );
+  </script>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <!--web3 -->
+  <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+  <script src="js/app.js"></script>
+
+  <!-- Dynamic in Static via API -->
+  <script>
+    (async function () {
+      const { text } = await (await fetch("/api/Navigation?code=a8JfSiplOEIFaCjOnVRmyJYCxBtnTGOy2AzvGcTWbEfq5RCajn50pA==")).json();
+      document.querySelector("#navigation_area").innerHTML = text;
+      
+    })();
+  </script>
+  <script>
+    (async function () {
+      const { text } = await (await fetch("/api/Footer?code=a8JfSiplOEIFaCjOnVRmyJYCxBtnTGOy2AzvGcTWbEfq5RCajn50pA==")).json();
+      document.querySelector("#footer_area").innerHTML = text;
+    })();
+  </script>
+</body>
+
+</html>
