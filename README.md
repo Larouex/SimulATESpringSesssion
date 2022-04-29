@@ -3,8 +3,9 @@
 
 
 # SimulATE Spring Sesssion
-Speaker: Larry W Jordan Jr
-Speaker Session Code and Artifacts
+Speakers: Larry W Jordan Jr & Mark Huang
+
+### Session Code and Artifacts
 
 <img src="./assets/open-fermentation-project-logo-v2-750.png" width="250"/>
 
