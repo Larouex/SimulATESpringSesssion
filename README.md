@@ -3,14 +3,11 @@
 
 
 # SimulATE Spring Sesssion
-Speakers: Larry W Jordan Jr & Mark Huang
+**Speakers**: Larry W Jordan Jr & Mark Huang
 
-### Session Code and Artifacts
+## Session Code and Artifacts
 
 <img src="./assets/open-fermentation-project-logo-v2-750.png" width="250"/>
-
-
-# Saluminator Blockchain Ethereum dApp Overview
 
 This folder in the repository provides the code we created to simulate a "Supply Chain" and "HACCP Events" Integration with Ethereum Blockchain via Smart Contracts.
 

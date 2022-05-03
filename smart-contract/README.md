@@ -3,7 +3,9 @@
 
 
 # SimulATE Spring Sesssion
-Speakers: Larry W Jordan Jr & Mark Huang
+**Speakers**: Larry W Jordan Jr & Mark Huang
+
+<img src="../assets/open-fermentation-project-logo-v2-750.png" width="250"/>
 
 ## Overview of the Smart Contract Development
 Solidity is the programming language for development of a Smart Contract using Ethereum. Getting started does require some knowledge of how to program software, that said using Solidity and development of Smart Contracts are not difficult to wrap your head around. 
