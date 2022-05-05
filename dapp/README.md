@@ -6,10 +6,40 @@
 
 <img src="../assets/open-fermentation-project-logo-v2-750.png" width="250"/>
 
-## Saluminator Blockchain Ethereum dApp Overview
+## Norcini Artisians Ethereum dApp Overview
 
 This folder in the repository provides the code we developed to implement a "Decentralized Application" called a dApp in the integration scenarios with Ethereum Blockchain via Smart Contracts.
 
-## Serverless Architecture
+### Deploying the Static Web App
+This repository contains the web site that we can deploy to an Azure Static Web App. The first thing is familairze yourself with the Azure capabilities for Azure Static Web Apps's and the link below will provide that overview...
 
-<img src="../assets/norcini-artisians-serverless-architecture.png" width="1200"/>
+[Static Web Apps](https://azure.microsoft.com/en-us/services/app-service/static/#overview)
+
+### Azure Functions
+Next, we use Azure Functions to provide dynamic and run-time capabilities to our Static Web App. You maybe used to being able to execute "service-side" code in other web development and hosted environments, but that is not a capability to run code behind approaches in Static Apps. We use Azure Function to accomplish equivilant things.
+
+[Azure Functions](https://azure.microsoft.com/en-us/services/functions/#overview)
+
+We have the following capabilities...
+
+* RegisterHACCPReporting
+* Navigation
+* Footer
+
+__RegisterHACCPReporting__
+This function is the code that provides the "Bridge" between the web app and the API for the Azure IoT Central application. The main code is contained in the *index.js* file and closely follows standard approaches to extending and integrating with Azure Iot Central.
+
+Here are examples references for learning...
+
+* [iotc-nodejs-device-client](https://github.com/lucadruda/iotc-nodejs-device-client)
+* [azure-iot-sdk-node](https://github.com/Azure/azure-iot-sdk-node)
+
+The code in this repository builds from these apporaches. The key thing to remember is that there are "secrets" your application has for connecting via an API/Device and we need a way to access those values at runtime and never in our checked-in code :)
+
+When you access your Static Web App in the Azure Portal, there is an option for *Confguration* and the following values are setup for the application to pull those values at run-time and they include...
+
+
+<img src="../assets/static-app-config-values.png" width="90%"/>
+
+
+
