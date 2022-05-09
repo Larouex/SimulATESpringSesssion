@@ -25,7 +25,6 @@ This is the main page...
 
 We host the code and all of the demo end to end, it is located at [Norcini Artisians dApp](https://www.norciniartisians.com) you can try all of the options. You will not be able to sign into the Azure IoT Central application without being added to the application. If you need help with that or want to check it out, contact us.
 
-
 ### Azure Functions
 Next, we use Azure Functions to provide dynamic and run-time capabilities to our Static Web App. You maybe used to being able to execute "service-side" code in other web development and hosted environments, but that is not a capability to run code behind approaches in Static Apps. We use Azure Function to accomplish equivilant things.
 
@@ -49,8 +48,9 @@ The code in this repository builds from these apporaches. The key thing to remem
 
 When you access your Static Web App in the Azure Portal, there is an option for *Confguration* and the following values are setup for the application to pull those values at run-time and they include...
 
-
 <img src="../assets/static-app-config-values.png" width="90%"/>
 
+
+<img src="../assets/iotc-connection-1.png" width="90%"/>
 
 
