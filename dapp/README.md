@@ -56,4 +56,4 @@ The values that are used for SaSKeyDevice and ScopeId are accessed here in your 
 
 
 __Navigation and Footer__
-The Navigation and Footer functions are static HTML representations 
+The Navigation and Footer functions are static HTML representations of the header navaigation (based on Bootstrap) and the footer areas of the web page. This is a way to use centralization of assets in a static app.
