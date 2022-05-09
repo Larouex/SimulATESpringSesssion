@@ -26,7 +26,7 @@ module.exports = async function (context, req) {
         "</li>" +
         "</ul>" +
         '<p class="text-muted mb-4 mb-lg-0">' +
-        "&copy; " + process.env.Copyright +
+        process.env.Copyright +
         "<br />" +
         "<br />" +
         "Saluminator&trade; and the Saluminator Logo&trade; are" +
