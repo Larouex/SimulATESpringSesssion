@@ -55,3 +55,5 @@ The values that are used for SaSKeyDevice and ScopeId are accessed here in your 
 <img src="../assets/iotc-connection-1.png" width="90%"/>
 
 
+__Navigation and Footer__
+The Navigation and Footer functions are static HTML representations 

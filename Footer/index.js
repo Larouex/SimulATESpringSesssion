@@ -1,6 +1,6 @@
 module.exports = async function (context, req) {
     context.log('Creating the Footer');
-    var buildVersion = "202101602-1.0.0.45";
+    var buildVersion = "20220509-1.0.0.48";
     context.res.json({
       text:
         '<footer class="footer bg-dark">' +
