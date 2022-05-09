@@ -6,14 +6,18 @@
 
 <img src="../assets/open-fermentation-project-logo-v2-750.png" width="250"/>
 
-## Norcini Artisians Ethereum dApp Overview
+## Ethereum dApp Overview
 
-This folder in the repository provides the code we developed to implement a "Decentralized Application" called a dApp in the integration scenarios with Ethereum Blockchain via Smart Contracts.
+This folder in the repository provides the code we developed to implement a "Decentralized Application" referred to as a "dApp" for integration scenarios with Ethereum blockchain via  Smart Contracts.
 
 ### Deploying the Static Web App
 This repository contains the web site that we can deploy to an Azure Static Web App. The first thing is familairze yourself with the Azure capabilities for Azure Static Web Apps's and the link below will provide that overview...
 
 [Static Web Apps](https://azure.microsoft.com/en-us/services/app-service/static/#overview)
+
+The static web app we developed is simple and easy to customize for you to be able to experiment. For completeness, we included files for About, Privacy Policy, etc. Feel free to customize and please remove links to our sites.
+
+<img src="../assets/norcini-artisians-send-telemetry-1.png" width="90%"/>
 
 ### Azure Functions
 Next, we use Azure Functions to provide dynamic and run-time capabilities to our Static Web App. You maybe used to being able to execute "service-side" code in other web development and hosted environments, but that is not a capability to run code behind approaches in Static Apps. We use Azure Function to accomplish equivilant things.
