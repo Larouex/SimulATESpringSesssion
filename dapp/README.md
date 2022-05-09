@@ -15,9 +15,16 @@ This repository contains the web site that we can deploy to an Azure Static Web 
 
 [Static Web Apps](https://azure.microsoft.com/en-us/services/app-service/static/#overview)
 
-The static web app we developed is simple and easy to customize for you to be able to experiment. For completeness, we included files for About, Privacy Policy, etc. Feel free to customize and please remove links to our sites.
+The static web app we developed is easy to customize for you to be able to experiment. For completeness we have included files for About, Privacy Policy, etc. Feel free to customize and please remove links to our sites.
+
+All of the HTML is contained in the [index.html](./index.html) and the Script Code [app.js](./js/app.js) with a couple other supporting files you will see linked in the code.
+
+This is the main page...
 
 <img src="../assets/norcini-artisians-send-telemetry-1.png" width="90%"/>
+
+We host the code and all of the demo end to end, it is located at [Norcini Artisians dApp](https://www.norciniartisians.com) you can try all of the options. You will not be able to sign into the Azure IoT Central application without being added to the application. If you need help with that or want to check it out, contact us.
+
 
 ### Azure Functions
 Next, we use Azure Functions to provide dynamic and run-time capabilities to our Static Web App. You maybe used to being able to execute "service-side" code in other web development and hosted environments, but that is not a capability to run code behind approaches in Static Apps. We use Azure Function to accomplish equivilant things.
