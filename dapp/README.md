@@ -50,6 +50,7 @@ When you access your Static Web App in the Azure Portal, there is an option for 
 
 <img src="../assets/static-app-config-values.png" width="90%"/>
 
+The values that are used for SaSKeyDevice and ScopeId are accessed here in your IoT Central applicaiton.
 
 <img src="../assets/iotc-connection-1.png" width="90%"/>
 
