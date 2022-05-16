@@ -11,6 +11,13 @@
 
 This folder in the repository provides the code we created to simulate a "Supply Chain" and "HACCP Events" Integration with Ethereum Blockchain via Smart Contracts.
 
+Here is the "quick start" on the project in this repository...
+
+* This [README](./README.md) provides the overall overview of the scenario
+* The [Decentralized Application referred to as dApp](./dapp/README.md) is documented here in detail.
+* The [Overview of the Smart Contract Development](./dapp/README.md) is documented here in detail.
+
+
 
 <img src="./assets/norcini-artisians-serverless-architecture.png" width="1200"/>
 
